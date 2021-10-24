@@ -161,6 +161,8 @@ body {
 }
 
 .promo {
+    display: flex;
+    justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
 }
@@ -175,6 +177,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    flex-grow: 1;
 }
 
 .card::before {
