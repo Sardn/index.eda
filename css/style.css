@@ -51,7 +51,7 @@ body {
 
 .login {
     background-color: #EBEBEB;
-    border-radius: 50%;
+    border-radius: 50px;
     padding: 16px 30px;
     display: block;
     text-decoration: none;
@@ -92,8 +92,27 @@ body {
     align-items: center;
     overflow: hidden;
     border-radius: 20px;
-    min-height: 400px;
+    min-height: 500px;
     padding: 100px;
+}
+
+.slider-buttons {
+    position: absolute;
+    right: 86px;
+    bottom: 80px;
+    z-index: 9;
+    display: flex;
+    align-items: center;
+    width: 100px;
+    justify-content: space-between;
+}
+
+.slider-button {
+    cursor: pointer;
+}
+
+.swiper {
+    position: relative;
 }
 
 .slide-title {
@@ -106,7 +125,7 @@ body {
 
 .slide-content {
     position: relative;
-    max-width: 400px;
+    max-width: 500px;
 }
 
 .slide-text {
@@ -147,6 +166,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
+.slide-vitamins{
+    background-image: url("../img/vitamins.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slide-autumn{
+    background-image: url("../img/autumn.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .slide:before {
     content: " ";
@@ -165,6 +194,7 @@ body {
     justify-content: space-between;
     padding-top: 50px;
     padding-bottom: 50px;
+    margin: -20px;
 }
 
 .card {
@@ -175,9 +205,11 @@ body {
     max-width: 570px;
     min-height: 380px;
     display: flex;
+    flex: 50%;
     flex-direction: column;
     justify-content: space-between;
     flex-grow: 1;
+    margin: 20px;
 }
 
 .card::before {
@@ -233,7 +265,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 } */
-.card-image{
+
+.card-image {
     position: absolute;
     left: 0;
     top: 0;
@@ -241,4 +274,320 @@ body {
     height: 100%;
     z-index: -2;
     object-fit: cover;
+}
+
+.section-title {
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 47px;
+}
+
+.delivery-cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+}
+
+.delivery-card {
+    position: relative;
+    margin: 15px;
+    width: 275px;
+    height: 182px;
+    border-radius: 18px;
+    overflow: hidden;
+}
+
+.delivery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.delivery-week {
+    padding: 100px 0;
+}
+
+.delivery-tag {
+    position: absolute;
+    left: 10px;
+    top: 16px;
+    border-radius: 30px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494f;
+    padding: 5px 10px;
+}
+
+.tag-health {
+    background: #d0fd89;
+}
+
+.tag-veg {
+    background: #AEBC41;
+}
+
+.tag-meat {
+    background: #B86B78;
+}
+
+.tag-poultry {
+    background: #D68334;
+}
+
+.tag-fish {
+    background: #CD6255;
+}
+
+.tag-kids {
+    background: #FFFDBF;
+}
+
+.tag-parents {
+    background: #F6FDC8;
+}
+
+.tag-holiday {
+    background: #FEF7FE;
+}
+
+.section-grey {
+    background-color: #F6F6F6;
+}
+
+.category {
+    padding-top: 40px;
+    padding-bottom: 60px;
+    
+}
+
+.tabs-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 37px;
+}
+
+.tabs-card {
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.tabs-image {
+    max-width: 100%;
+}
+
+.tabs-card-content {
+    padding: 23px;
+}
+
+.tabs-title {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.tabs-description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #b9b9be;
+}
+
+.tabs-price {
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 23px;
+    color: #4b4b51;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.tabs {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    margin-bottom: 62px;
+}
+
+.tabs-link {
+    font-size: 20px;
+    line-height: 23px;
+    color: #49494f;
+    text-decoration: none;
+    margin-right: 58px;
+}
+
+.tabs-link.active {
+    color: #F37321;
+}
+
+.tabs-weight {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #aaaab1;
+}
+
+.tabs-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.section-titl{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+.advant-content{
+    display: flex;
+    gap: 37px;
+    margin-bottom: 200px;
+}
+.advant-card {
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1); 
+    max-width: 270px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.advant-image {
+    max-width: 100%;
+   margin: 30px auto;
+   display: block;
+}
+
+.advant-card-content {
+    padding: 23px;
+}
+
+.advant-title {
+    margin-top: 0;
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23px;
+    text-align: center;
+}
+
+.advant-description {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #b9b9be;
+    text-align: center;
+}
+
+.button-outline {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #f37321;
+    box-sizing: border-box;
+    padding: 15px 25px;
+    border-radius: 33px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    color: #f37321;
+}
+
+.button-center {
+    display: block;
+    margin: auto;
+    margin-top: 60px;
+    width: 315px;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: #f6f6f6;
+}
+
+.footer-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 50px;
+}
+
+.footer-link {
+    color: black;
+    font-size: 16px;
+    line-height: 23px;
+    margin-right: 50px;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.social-link {
+    margin-left: 20px;
+    text-decoration: none;
+}
+
+@media (min-width: 1260px) {
+    .container {
+        max-width: 960px;
+    }
+    .search-form {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .tabs-content {
+        flex: 50%;
+        max-width: calc(50% - 30px);
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+    .slide {
+        padding: 70px;
+    }
+    .delivery-card {
+        width: calc(50% - 30px);
+    }
+    .footer-logo {
+        margin-right: 40px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 560px;
+    }
+    .header{
+        flex-wrap: wrap;
+    }
+    .search-form {
+        order: 5;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .promo{
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 90%;
+    }
+.tabs-card{
+    max-width: 100%;
+}
 }
