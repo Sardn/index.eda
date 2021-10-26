@@ -92,14 +92,17 @@ body {
     align-items: center;
     overflow: hidden;
     border-radius: 20px;
-    min-height: 500px;
+    min-height: 450px;
+    /* min-width: 1500px; */
     padding: 100px;
 }
-
+/* .slider.container{
+    padding: 0;
+} */
 .slider-buttons {
     position: absolute;
-    right: 86px;
-    bottom: 80px;
+    right: 46px;
+    bottom: 40px;
     z-index: 9;
     display: flex;
     align-items: center;
@@ -166,12 +169,14 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.slide-vitamins{
+
+.slide-vitamins {
     background-image: url("../img/vitamins.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
-.slide-autumn{
+
+.slide-autumn {
     background-image: url("../img/autumn.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -360,7 +365,6 @@ body {
 .category {
     padding-top: 40px;
     padding-bottom: 60px;
-    
 }
 
 .tabs-content {
@@ -440,17 +444,21 @@ body {
     align-items: center;
     justify-content: space-between;
 }
-.section-titl{
+
+.section-titl {
     margin-top: 100px;
     margin-bottom: 50px;
 }
-.advant-content{
+
+.advant-content {
     display: flex;
+    flex-wrap: wrap;
     gap: 37px;
     margin-bottom: 200px;
 }
+
 .advant-card {
-    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1); 
+    box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
     max-width: 270px;
     border-radius: 20px;
     overflow: hidden;
@@ -459,8 +467,8 @@ body {
 
 .advant-image {
     max-width: 100%;
-   margin: 30px auto;
-   display: block;
+    margin: 30px auto;
+    display: block;
 }
 
 .advant-card-content {
@@ -535,8 +543,7 @@ body {
     margin-left: 20px;
     text-decoration: none;
 }
-
-@media (min-width: 1260px) {
+ /* @media (min-width: 1260px) {
     .container {
         max-width: 960px;
     }
@@ -569,25 +576,39 @@ body {
     .container {
         max-width: 560px;
     }
-    .header{
+    .header {
         flex-wrap: wrap;
     }
     .search-form {
-        order: 5;
+        order: 6;
         margin-left: 0;
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
     }
-    .promo{
+    .promo {
         flex-wrap: wrap;
     }
 }
+
 @media (min-width: 576px) {
     .container {
         max-width: 90%;
     }
-.tabs-card{
-    max-width: 100%;
-}
-}
+    .tabs-card {
+        max-width: 100%;
+    }
+    .header {
+        flex-wrap: wrap;
+    }
+    .search-form {
+        order: 6;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .promo {
+        flex-wrap: wrap;
+    }
+}  */
