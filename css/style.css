@@ -414,6 +414,7 @@ body {
 
 .tabs {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
@@ -430,8 +431,11 @@ body {
 
 .tabs-link.active {
     color: #F37321;
+    
 }
-
+.tabs-item{
+    padding-bottom: 10px;
+}
 .tabs-weight {
     font-size: 17px;
     font-weight: 500;
@@ -519,7 +523,9 @@ body {
 
 .footer-wrapper {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
 }
 
 .footer-logo {
@@ -543,72 +549,70 @@ body {
     margin-left: 20px;
     text-decoration: none;
 }
- /* @media (min-width: 1260px) {
-    .container {
+@media (max-width:1260px){
+    .container{
         max-width: 960px;
     }
-    .search-form {
+    .search-form{
         margin-left: 40px;
         margin-right: 40px;
     }
-    .tabs-content {
-        flex: 50%;
+    .tabs-content{
+        flex-wrap: wrap;
+    }
+    .tabs-card{
         max-width: calc(50% - 30px);
     }
+    .advant-content{
+        flex-wrap: wrap;
+    }
+    .advant-card{
+        max-width: calc(50% - 30px);
+    }
+    .social-links {
+       
+        margin-left: 0;
+    }
 }
-
-@media (min-width: 992px) {
-    .container {
+@media (max-width: 992px){
+    .container{
         max-width: 750px;
     }
-    .slide {
+    .slide{
         padding: 70px;
     }
-    .delivery-card {
-        width: calc(50% - 30px);
+    .delivery-card{
+        max-width: calc(50% - 30px);
     }
-    .footer-logo {
+    .footer-logo{
         margin-right: 40px;
     }
 }
-
-@media (min-width: 768px) {
-    .container {
+@media (max-width: 768px){
+    .container{
         max-width: 560px;
     }
-    .header {
+    .header{
         flex-wrap: wrap;
     }
-    .search-form {
-        order: 6;
+    .search-form{
+        order: 5;
         margin-left: 0;
         margin-right: 0;
         margin-top: 15px;
         margin-bottom: 15px;
+        /* min-width: 514px; */
     }
-    .promo {
-        flex-wrap: wrap;
+    .promo{
+      flex-wrap: wrap;  
     }
 }
-
-@media (min-width: 576px) {
-    .container {
+@media (max-width: 576px){
+    .container{
         max-width: 90%;
     }
-    .tabs-card {
-        max-width: 100%;
+    .tabs-card{
+       max-width: 100%;
     }
-    .header {
-        flex-wrap: wrap;
-    }
-    .search-form {
-        order: 6;
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 15px;
-        margin-bottom: 15px;
-    }
-    .promo {
-        flex-wrap: wrap;
-    }
-}  */
+}
+ 
