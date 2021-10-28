@@ -457,6 +457,7 @@ body {
 .advant-content {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 37px;
     margin-bottom: 200px;
 }
@@ -564,10 +565,13 @@ body {
         max-width: calc(50% - 30px);
     }
     .advant-content{
-        flex-wrap: wrap;
+        /* display: flex;
+        flex-wrap: wrap; */
     }
     .advant-card{
-        max-width: calc(50% - 30px);
+    
+        /* max-width: calc(50% - 30px);
+        overflow: hidden; */
     }
     .social-links {
        
