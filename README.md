@@ -1,1 +1,1 @@
-# index.eda
+https://sardn.github.io/index.eda/
